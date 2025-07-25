@@ -52,7 +52,7 @@ body {
     .lap      { background: #ffc107; color: black; }
 
     .buttons button:hover {
-      background: #000;
+      background: #ff9728;
       color: white;
       opacity: 0.85;
       transform: scale(1.03);
