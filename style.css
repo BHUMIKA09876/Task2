@@ -1,0 +1,87 @@
+body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #000; 
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding-top: 60px;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      text-align: center;
+      width: 350px;
+    }
+
+    .stopwatch {
+      width: 200px;
+      height: 200px;
+      border: 5px solid #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      font-weight: bold;
+      margin: 0 auto 30px;
+      background-color: #000;
+      color: white;
+    }
+
+    .buttons {
+      margin-bottom: 25px;
+    }
+
+    .buttons button {
+      padding: 12px 20px;
+      font-size: 16px;
+      margin: 6px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.2s;
+      font-weight: 500;
+    }
+
+    .start    { background: #4caf50; color: white; }
+    .stop     { background: #f44336; color: white; }
+    .reset    { background: #2196f3; color: white; }
+    .lap      { background: #ffc107; color: black; }
+
+    .buttons button:hover {
+      background: #000;
+      color: white;
+      opacity: 0.85;
+      transform: scale(1.03);
+    }
+
+    .laps {
+      max-height: 200px;
+      overflow-y: auto;
+      text-align: left;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      padding: 10px 15px;
+    }
+
+    .lap-item {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 8px 0;
+      font-size: 16px;
+    }
+
+    .lap-item:last-child {
+      border-bottom: none;
+    }
+
+    .laps::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .laps::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 4px;
+    }
